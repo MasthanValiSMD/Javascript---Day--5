@@ -1,0 +1,26 @@
+a. Print odd numbers in an array
+
+Anonymous :
+
+var odd =function () {
+    let n = [1, 2, 3, 4, 5]
+  let odd = n.filter(number => number % 2 == 1)
+  console.log(odd)
+  }
+odd()
+
+
+
+IIFE :
+
+(function (oddNum) {
+  let num = [];
+  
+  for (let number in oddNum) {
+    if (oddNum[number] % 2 == 1) {
+      num.push(oddNum[number]);
+      
+    }
+  }
+console.log(num)
+  })([2,3,4,5,6])

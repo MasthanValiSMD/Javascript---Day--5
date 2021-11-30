@@ -1,0 +1,26 @@
+c.Sum of all numbers in an array
+
+
+Anonymous :
+
+let func = function () {
+    
+    let arr = [1, 2, 3, 4, 5]
+    let sum = arr.reduce(function(a, b){
+        return a + b;
+    });
+    console.log(sum);
+}
+func()
+
+
+
+IIFE :
+
+(function () {
+    let sum = [1, 2, 3, 4].reduce(add, 0);
+    function add(accumulator, a) {
+      return accumulator + a;
+    }
+    console.log(sum);
+})()
